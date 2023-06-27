@@ -18,7 +18,7 @@ body{
 .navbar,.navbar-expand-sm,.navbar-dark,.bg-primary{
     background-color: #F9FF33;
 }
-a,p,h5 {
+a,p,h5,h4 {
     color: black !important;
     font-family: "Quicksand Medium", sans-serif;
   }
@@ -42,6 +42,7 @@ a,p,h5 {
     font-family: "Quicksand Medium", sans-serif;
       text-align: center;
       margin: 35px 0 20px 0 !important;
+      color: #F9FF33;
   }
   form {
     background-color: #333333;
@@ -68,19 +69,10 @@ textarea{
     font-size: 15px;
     margin-bottom: 20px;
 }
-button[type=submit] {
-  background-color: #1c1c1c;
-            border: none;
-            border-radius: 5px;
-            color: #ffffff;
-            cursor: pointer;
-            display: block;
-            font-size: 20px;
-            margin: 20px auto;
-            padding: 10px 20px;
-
-}
 button[type=submit]:hover{
   background-color: #F9FF33;
   color: #FF3CB9;
+}
+p:hover {
+  color: #F9FF33!important;
 }

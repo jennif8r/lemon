@@ -6,26 +6,32 @@
     <title>HOME</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .sobre {
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
      <!-- Menu -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-secury">
-        <img class="icone" src="lemon.png" alt=""><h1>Vest Lemon Shop</h1>
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation"></button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" aria-current="page">Pagina inicial<span class="visually-hidden">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contato">Contato</a>
-                </li>
-            </ul>
+        <div class="container">
+            <img class="icone" src="lemon.png" alt=""><h4>Vest Lemon Shop</h4>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <br>
@@ -60,42 +66,52 @@
         </button>
       </div>
       <hr>
-     <!-- Contato -->
-     <div id="contato" class="container">
-        <h1>Contato</h1>
-        <form action="https://formsubmit.co/jennifer.laracristo@gmail.com" method="POST">
-          <div class="form-group">
-            <div class="form-row">
-              <div class="col">
-                <input type="text" name="name" class="form-control" placeholder="Seu nome" required>
-                <br>
-              </div>
-              <div class="col">
-                <input type="email" name="email" class="form-control" placeholder="Endereço de e-mail" required>
-                <br>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <textarea placeholder="Sua mensagem" class="form-control" name="message" rows="10" required></textarea>
-            <br>
-          </div>
-          <input type="hidden" name="_next" value="https://jennif8r.github.io/lemonVest/obrigada.html">
-          <input type="hidden" name="_captcha" value="false">
-          <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
-          <br>
-        </form>
+      <br>
+      <!-- Sobre -->
+      <div id="sobre" class="container sobre">
+        <h1>Quem somos?</h1>
+        <img src="prin.png" class="img-fluid" alt="">
+        <p >Uma marca de moda que celebra a individualidade, a diversidade e a autenticidade de cada pessoa. Acreditamos que a moda é uma forma poderosa de expressão pessoal, e nosso objetivo é oferecer roupas e acessórios vibrantes que permitam que você mostre sua verdadeira essência.</p>
+        <p >Na Vest Lemon Shop, não nos limitamos a padrões ou estereótipos. Valorizamos corpos reais e acreditamos que cada um deles é bonito à sua maneira. Nossa missão é capacitar mulheres de todas as idades, dos tamanhos M ao XG, a sentirem-se confiantes, confortáveis e elegantes em suas próprias peles.</p>
+        <p >Nossa paleta de cores é tão diversificada quanto nossas clientes. Dos tons suaves aos mais vibrantes, oferecemos uma ampla variedade de opções para que você possa encontrar exatamente o que ressoa com seu estilo pessoal. E não se esqueça do nosso adorável mascote, o limão com óculos de sol, que representa o espírito divertido e descontraído da marca.</p>
+        <p >Combinamos designs modernos, tecidos de qualidade e atenção meticulosa aos detalhes para criar peças únicas que se destacam. Seja um vestido deslumbrante, uma blusa elegante ou uma calça confortável, cada item em nossa coleção é projetado para realçar sua individualidade e oferecer conforto duradouro.</p>
+        <p >Na Vest Lemon Shop, você encontrará muito mais do que apenas roupas. Somos uma comunidade de mulheres fortes, confiantes e empoderadas, unidas pela paixão pela moda e pela celebração da diversidade. Acreditamos que todas as mulheres merecem se sentir bonitas, independentemente de seu estilo, cor ou tamanho.</p>
+        <p >Estamos ansiosos para acompanhá-lo(a) em sua jornada de moda, ajudando-o(a) a expressar-se autenticamente e a se destacar da multidão. Seja bem-vindo(a) à Vest Lemon Shop, onde a moda encontra a individualidade!</p>
       </div>
-      <br>
-      <br>
       <br>
       <hr>
       <br>
+      <!-- Contato -->
+     <div id="contato" class="container">
+      <h1>Contato</h1>
+      <form action="https://formsubmit.co/jennifer.laracristo@gmail.com" method="POST">
+        <div class="form-group">
+          <div class="form-row">
+            <div class="col">
+              <input type="text" name="name" class="form-control" placeholder="Seu nome" required>
+              <br>
+            </div>
+            <div class="col">
+              <input type="email" name="email" class="form-control" placeholder="Endereço de e-mail" required>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Sua mensagem" class="form-control" name="message" rows="10" required></textarea>
+          <br>
+        </div>
+        <input type="hidden" name="_next" value="https://jennif8r.github.io/lemonVest/obrigada.html">
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit" class="btn btn-secondary">Enviar</button>
+        <br>
+      </form>
+    </div>
+    <br>
     <!-- final pagina -->
     <footer class="bg-light py-4">
         <div class="container text-center">
            <p>@2023 - Vest Lemon Shop - Todos os direitos reservados.</p>
-           
         </div>
     </footer>
 </body>
