@@ -76,3 +76,7 @@ button[type=submit]:hover{
 p:hover {
   color: #F9FF33!important;
 }
+.sobre {
+  padding: 20px!important;
+  margin: 20px!important;
+}
